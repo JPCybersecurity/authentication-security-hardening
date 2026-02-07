@@ -24,7 +24,7 @@ iptables -A INPUT -p tcp --dport 22 -m recent --seconds 60 --hitcount 4 -j DROP
 - SSH connection attempts hanging from the attacker machine
 - Verification performed from an external attack host
 
-See screenshots in the `/screenshots` directory.
+See screenshots in the [`/screenshots`] directory. 
 
 
 
