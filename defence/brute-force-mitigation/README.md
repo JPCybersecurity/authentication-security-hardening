@@ -18,6 +18,14 @@ iptables -A INPUT -p tcp --dport 22 -m recent --seconds 60 --hitcount 4 -j DROP
 - The SSH service remained operational while the attacker’s IP address was denied access
 - Network-layer enforcement prevented further authentication attempts without impacting legitimate services
 
+## Evidence
+
+- Firewall logs indicating dropped packets after repeated login attempts
+- SSH connection attempts hanging from the attacker machine
+- Verification performed from an external attack host
+
+See screenshots in the `/screenshots` directory.
+
 
 
 
