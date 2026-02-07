@@ -12,3 +12,13 @@ This section demonstrates defensive measures implemented to mitigate brute-force
 ```bash
 iptables -A INPUT -p tcp --dport 22 -m recent --seconds 60 --hitcount 4 -j DROP
 
+## Outcome
+
+- Automated brute-force login attempts were successfully blocked after exceeding defined thresholds
+- The SSH service remained operational while the attacker’s IP address was denied access
+- Network-layer enforcement prevented further authentication attempts without impacting legitimate services
+
+
+
+
+
